@@ -27,6 +27,17 @@ a {
   color: inherit;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+}
+
 .list-reset {
   list-style: none;
   margin: 0;
@@ -67,8 +78,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px; 
-  max-width: $maxWidthContainer; 
+  padding: 0 15px;
+  max-width: $maxWidthContainer;
 }
 
 @media (max-width: 1284px) {
@@ -81,7 +92,7 @@ a {
 @media (max-width: 1130px) {
   .container {
     margin: 0 auto;
-    padding: 0 15px; 
+    padding: 0 15px;
     max-width: 930px;
   }
 }
@@ -90,15 +101,15 @@ a {
   .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 630px; 
+    max-width: 630px;
   }
 }
 
 @media (max-width: 630px) {
   .container {
     margin: 0 auto;
-    padding: 0 15px; 
-    max-width: 400px; 
+    padding: 0 15px;
+    max-width: 400px;
   }
 }
 
@@ -106,6 +117,6 @@ a {
   .container {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 300px; 
+    max-width: 300px;
   }
 }

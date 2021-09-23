@@ -24,18 +24,21 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 	background-color: $whiteColor;
 	box-shadow: 10px 10px 20px 0px rgba(12, 13, 12, 0.1);
 
 	&__title {
 		width: 100%;
-		font-family: "OpenSans-Bold", sans-serif;
-		font-size: 36px;
+		min-height: 125px;
 		margin: 0;
 		padding: 25px;
+		flex: 1 0 auto;
+		font-family: "OpenSans-Bold", sans-serif;
+		font-size: 36px;
 		background-color: $grayColor;
 		text-align: center;
-		min-height: 125px;
 		line-height: calc(40 / 36 * 100%);
 	}
 

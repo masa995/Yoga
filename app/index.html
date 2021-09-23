@@ -26,36 +26,42 @@
 	<div class="container">
 		<div class="header__inner">
 			<a href="/" class="header__logo-link">
-				<img src="../img/logo.png" alt="Лого" class="header__logo">
+				<picture>
+					<source media="(max-width: 400px)" srcset="img/mobile/logo-mobile.webp" type="image/webp">
+					<source srcset="img/logo.webp" type="image/webp">
+
+					<source media="(max-width: 400px)" srcset="img/mobile/logo-mobile.png">
+					<img src="img/logo.png" alt="Лого" class="header__logo">
+				</picture>
 			</a>
 
-			<nav class= "menu header__menu">
-				<button class="menu__btn  btn-reset js-menu__btn" aria-label= "Иконка меню">
+			<nav class="menu header__menu">
+				<button class="menu__btn  btn-reset js-menu__btn" aria-label="Иконка меню">
 					<span class="menu__btn-elem"></span>
 					<span class="menu__btn-elem"></span>
 					<span class="menu__btn-elem"></span>
 				</button>
 
-				<ul class= "menu__list list-reset js-menu__list">
-					<li class= "menu__item">
+				<ul class="menu__list list-reset js-menu__list">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#about">О нас</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#sale">Акции</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#programs">Программы</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#videos">Видео уроки</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#price">Цены</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#trainers">Тренеры</a>
 					</li>
-					<li class= "menu__item">
+					<li class="menu__item">
 						<a class="menu__link js-links" href="#contact">Контакты</a>
 					</li>
 				</ul>
@@ -63,39 +69,57 @@
 		</div>
 	</div>
 </header>
-
     
     <main class="main">
       <section class="hero">
 	<div class="container hero__inner">
-			<div class="hero__left-container">
-				<img src="../img/hero-img.png" alt="" aria-hidden = "true">
-			</div>
+		<div class="hero__left-container">
+			<picture>
+				<source media="(max-width: 320px)" srcset="img/mobile/hero-img-mobile.webp" type="image/webp">
+				<source media="(max-width: 630px)" srcset="img/middle/hero-img-middle.webp" type="image/webp">
+				<source srcset="img/hero-img.webp" type="image/webp">
 
-			<div class="hero__right-container">
-				<h1 class="title hero__title">Центр йоги</h1>
+				<source media="(max-width: 320px)" srcset="img/mobile/hero-img-mobile.png">
+				<source media="(max-width: 630px)" srcset="img/middle/hero-img-middle.png">
+				<img src="img/hero-img.png" alt="" aria-hidden="true">
+			</picture>
+		</div>
 
-				<p class="hero__text">Йога&nbsp;&mdash; мощный инструмент саморазвития, освоенный тысячелетия назад. Вы&nbsp;научитесь чувствовать и&nbsp;понимать свое тело, обретете гармонию.</p>
+		<div class="hero__right-container">
+			<h1 class="title hero__title">Центр йоги</h1>
 
-				<a href="#contact" class = "btn hero__btn js-links">Записаться</a>
-			</div>
+			<p class="hero__text">Йога&nbsp;&mdash; мощный инструмент саморазвития, освоенный тысячелетия назад.
+				Вы&nbsp;научитесь чувствовать и&nbsp;понимать свое тело, обретете гармонию.</p>
 
-		<a href="#about" class="hero__link-down js-links" aria-label = "Стрелочка вниз">
+			<a href="#contact" class="btn hero__btn js-links">Записаться</a>
+		</div>
+
+		<a href="#about" class="hero__link-down js-links" aria-label="Стрелочка вниз">
 			<svg>
-				<use xlink:href = "img/sprite.svg#arrow-down"/>
+				<use xlink:href="img/sprite.svg#arrow-down" />
 			</svg>
 		</a>
 	</div>
 </section>
-      <section class="about" id = "about">
+      <section class="about" id="about">
 	<div class="container about__inner">
 		<div class="about__left-container">
 			<h2 class="title about__title">О нас</h2>
-			<p class="about__text">Наша практика подходит людям любого возраста. Мы&nbsp;предлагаем групповые и&nbsp;индивидуальные занятия. Они проходят в&nbsp;светлом зале. Позитивная энергетика преподавателей и&nbsp;индивидуальный подход не&nbsp;оставят вас равнодушными!</p>
+			<p class="about__text">Наша практика подходит людям любого возраста. Мы&nbsp;предлагаем групповые
+				и&nbsp;индивидуальные занятия. Они проходят в&nbsp;светлом зале. Позитивная энергетика преподавателей
+				и&nbsp;индивидуальный подход не&nbsp;оставят вас равнодушными!</p>
 		</div>
-			
+
 		<div class="about__right-container">
-			<img src="../img/about-woman-img.png" alt="" aria-hidden = "true">
+			<picture>
+				<source media="(max-width: 930px)" srcset="img/mobile/about-woman-img-mobile.webp" type="image/webp">
+				<source media="(max-width: 1130px)" srcset="img/middle/about-woman-img-middle.webp" type="image/webp">
+				<source srcset="img/about-woman-img.webp" type="image/webp">
+
+				<source media="(max-width: 930px)" srcset="img/mobile/about-woman-img-mobile.png">
+				<source media="(max-width: 1130px)" srcset="img/middle/about-woman-img-middle.png">
+				<img src="img/about-woman-img.png" alt="" aria-hidden="true">
+			</picture>
 		</div>
 
 	</div>
@@ -108,165 +132,192 @@
 			<li class="advantage__item">
 				<article class="advantage__blok">
 					<div class="advantage__img advantage__img-1">
-						<img src="../img/advantage-icon-1.png" alt="Иконка">
+						<picture>
+							<source srcset="img/advantage-icon-1.webp" type="image/webp">
+
+							<img src="img/advantage-icon-1.png" alt="Иконка" class="trainers__img">
+						</picture>
 					</div>
 
 					<h3 class="advantage__title">Наши преподаватели</h3>
 
-					<p class="advantage__text">Все учителя практиковали йогу в Индии. И продолжают ежегодно повышать квалификацию, передавая Вам опыт.</p>
+					<p class="advantage__text">Все учителя практиковали йогу в Индии. И продолжают ежегодно повышать квалификацию,
+						передавая Вам опыт.</p>
 				</article>
 			</li>
 			<li class="advantage__item">
 				<article class="advantage__blok">
 					<div class="advantage__img advantage__img-2">
-						<img src="../img/advantage-icon-2.png" alt="Иконка">
-					</div>
+						<picture>
+							<source srcset="img/advantage-icon-2.webp" type="image/webp">
 
+							<img src="img/advantage-icon-2.png" alt="Иконка" class="trainers__img">
+						</picture>
+					</div>
 
 					<h3 class="advantage__title">Уютнная студия</h3>
 
-					<p class="advantage__text">Прекрасное место, где каждый найдет тот тип практики, который подходит именно ему. Уютная и теплая обстановка.</p>
+					<p class="advantage__text">Прекрасное место, где каждый найдет тот тип практики, который подходит именно ему.
+						Уютная и теплая обстановка.</p>
 				</article>
 			</li>
 			<li class="advantage__item">
 				<article class="advantage__blok">
 					<div class="advantage__img advantage__img-3">
-						<img src="../img/advantage-icon-3.png" alt="Иконка">
-					</div>
+						<picture>
+							<source srcset="img/advantage-icon-3.webp" type="image/webp">
 
+							<img src="img/advantage-icon-3.png" alt="Иконка" class="trainers__img">
+						</picture>
+					</div>
 
 					<h3 class="advantage__title">Детская комната</h3>
 
-					<p class="advantage__text">Теперь вы сможете взять вашего малыша с собой. Во время занятия, он будет в детской,  за стенкой в надежные руки опытной няни.</p>
+					<p class="advantage__text">Теперь вы сможете взять вашего малыша с собой. Во время занятия, он будет в
+						детской, за стенкой в надежные руки опытной няни.</p>
 				</article>
 			</li>
 		</ul>
 	</div>
 </section>
-      <section class="sale" id = "sale">
+      <section class="sale" id="sale">
 	<div class="container sale__inner">
 		<div class="sale__left-container">
-			<img src="../img/sale-woman-img.png" alt="" aria-hidden = "true">
+			<picture>
+				<source srcset="img/sale-woman-img.webp" type="image/webp">
+
+				<img src="img/sale-woman-img.png" alt="" aria-hidden="true">
+			</picture>
 		</div>
 
 		<div class="sale__right-container">
-			<h2 class="title sale__title">	Запишитесь сейчас и&nbsp;получите скидку&nbsp;30%</h2>
+			<h2 class="title sale__title"> Запишитесь сейчас и&nbsp;получите скидку&nbsp;30%</h2>
 
-			<a href="#contact" class = "btn sale__btn js-links">Записаться</a>
-		</div>	
+			<a href="#contact" class="btn sale__btn js-links">Записаться</a>
+		</div>
 	</div>
 </section>
-      <section class="programs" id = "programs">
+      <section class="programs" id="programs">
 	<div class="container programs__inner">
 		<h2 class="title programs__title">Наши программы</h2>
-	 	<div class="swiper-container programs__swiper-container program-slider">
-		  <!-- Additional required wrapper -->
+		<div class="swiper-container programs__swiper-container program-slider">
 			<div class="swiper-wrapper program-slider__wrapper">
-			    <!-- Slides -->
-			    <article class="swiper-slide program-slider__slide">
-			    	<a href="/" class="program-slider__link js-link-program" data-program = "0">
-			    		<img src="../img/program-1.jpg" alt="Фото занятия" class="program-slider__img">
-			    	
-				    	
-				    	<div class="program-slider__content">
-				    		<h3 class="program-slider__title">Хатха-йога</h3>
+				<!-- Slides -->
+				<article class="swiper-slide program-slider__slide">
+					<a href="/" class="program-slider__link js-link-program" data-program="0">
+						<picture>
+							<source srcset="img/program-1.webp" type="image/webp">
 
-				    		<p class="program-slider__descr">Призвана восстановить физическое здоровье, силу, продлить молодость</p>
-				    	</div>
-			    	</a>	
-			    </article>
+							<img src="img/program-1.jpg" alt="Фото занятия" class="program-slider__img">
+						</picture>
 
-			    <article class="swiper-slide program-slider__slide">
-			    	<a href="/" class="program-slider__link  js-link-program" data-program = "1">
-			    		<img src="../img/program-2.jpg" alt="Фото занятия" class="program-slider__img">
-			    	
-			    	
-				    	<div class="program-slider__content">
-				    		<h3 class="program-slider__title">Аштанга-йога</h3>
+						<div class="program-slider__content">
+							<h3 class="program-slider__title">Хатха-йога</h3>
 
-				    		<p class="program-slider__descr">Динамическая практика для  укрепления тела, развития гибкости</p>
-				    	</div>
-			    	</a>
-			    </article>
+							<p class="program-slider__descr">Призвана восстановить физическое здоровье, силу, продлить молодость</p>
+						</div>
+					</a>
+				</article>
 
-			    <article class="swiper-slide program-slider__slide">
-			    	<a href="/" class="program-slider__link  js-link-program" data-program = "2">
-			    		<img src="../img/program-3.jpg" alt="Фото занятия" class="program-slider__img">
-			    	
+				<article class="swiper-slide program-slider__slide">
+					<a href="/" class="program-slider__link  js-link-program" data-program="1">
+						<picture>
+							<source srcset="img/program-2.webp" type="image/webp">
 
-			    		<div class="program-slider__content">
-				    		<h3 class="program-slider__title">Йога для беременных</h3>
+							<img src="img/program-2.jpg" alt="Фото занятия" class="program-slider__img">
+						</picture>
 
-				    		<p class="program-slider__descr">Занятия йогой помогают подготовить организм к родам.</p>
-			    		</div>
-			    	</a>
-			    </article>
+						<div class="program-slider__content">
+							<h3 class="program-slider__title">Аштанга-йога</h3>
 
-			    <article class="swiper-slide program-slider__slide">
-			    	<a href="/" class="slider__link js-link-program" data-program = "3">
-			    		<img src="../img/program-4.jpg" alt="Фото занятия" class="program-slider__img">
-			    	
+							<p class="program-slider__descr">Динамическая практика для укрепления тела, развития гибкости</p>
+						</div>
+					</a>
+				</article>
 
-				    	<div class="program-slider__content">
-				    		
-				    		<h3 class="program-slider__title">Fly-йога</h3>
+				<article class="swiper-slide program-slider__slide">
+					<a href="/" class="program-slider__link  js-link-program" data-program="2">
+						<picture>
+							<source srcset="img/program-3.webp" type="image/webp">
 
-				    		<p class="program-slider__descr">Fly-йога&nbsp;&mdash; это комплекс традиционных асан (поз), выполняемых в&nbsp;специально приспособленных для этого гамаках.</p>
-				    	</div>
-			    	</a>
-			    </article>
+							<img src="img/program-3.jpg" alt="Фото занятия" class="program-slider__img">
+						</picture>
+
+						<div class="program-slider__content">
+							<h3 class="program-slider__title">Йога для беременных</h3>
+
+							<p class="program-slider__descr">Занятия йогой помогают подготовить организм к родам.</p>
+						</div>
+					</a>
+				</article>
+
+				<article class="swiper-slide program-slider__slide">
+					<a href="/" class="slider__link js-link-program" data-program="3">
+						<picture>
+							<source srcset="img/program-4.webp" type="image/webp">
+
+							<img src="img/program-4.jpg" alt="Фото занятия" class="program-slider__img">
+						</picture>
+
+						<div class="program-slider__content">
+
+							<h3 class="program-slider__title">Fly-йога</h3>
+
+							<p class="program-slider__descr">Fly-йога&nbsp;&mdash; это комплекс традиционных асан (поз), выполняемых
+								в&nbsp;специально приспособленных для этого гамаках.</p>
+						</div>
+					</a>
+				</article>
 			</div>
 		</div>
 
-		<!-- If we need pagination -->
 		<div class="swiper-pagination program-slider__pagination"></div>
 	</div>
 </section>
-      <section class="videos" id = "videos">
+      <section class="videos" id="videos">
 	<div class="container videos__inner">
 		<div class="videos__left-container">
 			<div class="swiper-container videos__swiper-container videos-slider">
-			  <!-- Additional required wrapper -->
 				<div class="swiper-wrapper videos-slider__wrapper">
-				    <!-- Slides -->
-					 <div class="swiper-slide videos-slider__slide js-slide-video">
-				   		<button class="btn-reset videos-slider__btn js-btn-play">
-						    <svg>
-						    	<use xlink:href = "img/sprite.svg#play-arrow"/>
-						    </svg>
-				    	</button>
+					<!-- Slides -->
+					<div class="swiper-slide videos-slider__slide js-slide-video">
+						<button class="btn-reset videos-slider__btn js-btn-play">
+							<svg>
+								<use xlink:href="img/sprite.svg#play-arrow" />
+							</svg>
+						</button>
 
-				    	<video class = "videos-slider__media" src="../resources/videos/video1.mp4"></video> 
+						<video class="videos-slider__media" src="../resources/videos/video1.mp4"></video>
 					</div>
 
 					<div class="swiper-slide videos-slider__slide js-slide-video">
 						<button class="btn-reset videos-slider__btn js-btn-play">
-						    <svg>
-								<use xlink:href = "img/sprite.svg#play-arrow"/>
+							<svg>
+								<use xlink:href="img/sprite.svg#play-arrow" />
 							</svg>
-				    	</button>
+						</button>
 
-				    	<video class = "videos-slider__media" src="../resources/videos/video2.mp4"></video> 
+						<video class="videos-slider__media" src="../resources/videos/video2.mp4"></video>
 					</div>
 
 					<div class="swiper-slide videos-slider__slide js-slide-video">
 						<button class="btn-reset videos-slider__btn js-btn-play">
-						    <svg>
-								<use xlink:href = "img/sprite.svg#play-arrow"/>
+							<svg>
+								<use xlink:href="img/sprite.svg#play-arrow" />
 							</svg>
-				    	</button>
+						</button>
 
-				    	<video class = "videos-slider__media" src="../resources/videos/video3.mp4" muted></video> 
+						<video class="videos-slider__media" src="../resources/videos/video3.mp4" muted></video>
 					</div>
 
 					<div class="swiper-slide videos-slider__slide js-slide-video">
 						<button class="btn-reset videos-slider__btn js-btn-play">
-						    <svg>
-								<use xlink:href = "img/sprite.svg#play-arrow"/>
+							<svg>
+								<use xlink:href="img/sprite.svg#play-arrow" />
 							</svg>
-				    	</button>
+						</button>
 
-				    	<video class = "videos-slider__media" src="../resources/videos/video4.mp4" muted></video> 
+						<video class="videos-slider__media" src="../resources/videos/video4.mp4" muted></video>
 					</div>
 				</div>
 			</div>
@@ -278,13 +329,14 @@
 		<div class="videos__right-container">
 			<h2 class="title videos__title">Видео уроки</h2>
 
-			<p class="videos__descr">Уроки подойдут новичкам, желающим познакомиться с йогой и овладеть техниками баланса тела и духа, так и любителям, нуждающимся в повторении базы и теории релаксации</p>
+			<p class="videos__descr">Уроки подойдут новичкам, желающим познакомиться с йогой и овладеть техниками баланса тела
+				и духа, так и любителям, нуждающимся в повторении базы и теории релаксации</p>
 
 			<ul class="list-reset video__social-list social">
 				<li class="social__item">
 					<a href="#" class="social__link">
 						<svg>
-							<use xlink:href = "img/sprite.svg#facebook"/>
+							<use xlink:href="img/sprite.svg#facebook" />
 						</svg>
 					</a>
 				</li>
@@ -292,7 +344,7 @@
 				<li class="social__item">
 					<a href="#" class="social__link">
 						<svg>
-							<use xlink:href = "img/sprite.svg#instagram"/>
+							<use xlink:href="img/sprite.svg#instagram" />
 						</svg>
 					</a>
 				</li>
@@ -300,7 +352,7 @@
 				<li class="social__item">
 					<a href="#" class="social__link">
 						<svg>
-							<use xlink:href = "img/sprite.svg#twitter"/>
+							<use xlink:href="img/sprite.svg#twitter" />
 						</svg>
 					</a>
 				</li>
@@ -349,14 +401,18 @@
 		</ul>
 	</div>
 </section>
-      <section class="trainers" id = "trainers">
+      <section class="trainers" id="trainers">
 	<div class="container trainers__inner">
 		<h2 class="title trainers__title">Наша команда</h2>
 
 		<ul class="list-reset trainers__list">
 			<li class="trainers__item">
-				<img src="../img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-1.webp" type="image/webp">
+
+					<img src="img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Михаил Соколов</h3>
 
@@ -365,8 +421,12 @@
 			</li>
 
 			<li class="trainers__item">
-				<img src="../img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-2.webp" type="image/webp">
+
+					<img src="img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Татьяна Волкова</h3>
 
@@ -375,8 +435,12 @@
 			</li>
 
 			<li class="trainers__item">
-				<img src="../img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-1.webp" type="image/webp">
+
+					<img src="img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Михаил Соколов</h3>
 
@@ -386,8 +450,12 @@
 
 
 			<li class="trainers__item">
-				<img src="../img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-2.webp" type="image/webp">
+
+					<img src="img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Татьяна Волкова</h3>
 
@@ -397,8 +465,12 @@
 
 
 			<li class="trainers__item">
-				<img src="../img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-1.webp" type="image/webp">
+
+					<img src="img/trainer-1.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Михаил Соколов</h3>
 
@@ -408,8 +480,12 @@
 
 
 			<li class="trainers__item">
-				<img src="../img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
-				
+				<picture>
+					<source srcset="img/trainer-2.webp" type="image/webp">
+
+					<img src="img/trainer-2.jpg" alt="Фото тренера" class="trainers__img">
+				</picture>
+
 				<div class="trainers__content">
 					<h3 class="trainers__title-name">Татьяна Волкова</h3>
 
@@ -440,44 +516,48 @@
 
     <footer class="footer">
 	<div class="container footer__inner">
-		<address class= "footer__box-address">
+		<address class="footer__box-address">
 			<p class="footer__title">Центр йоги</p>
-			
+
 			<p class="footer__address">Бульвар Чехова&nbsp;70, город Егорьевск <br>659503</p>
 
 			<a href="#" class="footer__link-site">www.yogadomain.com</a>
 		</address>
 
 		<div class="footer__menu">
-			<ul class= "footer__menu-list list-reset">
-				<li class= "footer__menu-item">
+			<ul class="footer__menu-list list-reset">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#about">О нас</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#sale">Акции</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#programs">Программы</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#videos">Видео уроки</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#price">Цены</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#trainers">Тренеры</a>
 				</li>
-				<li class= "footer__menu-item">
+				<li class="footer__menu-item">
 					<a class="footer__menu-link js-links" href="#contact">Контакты</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="footer__copyright">
-			<img src="../img/footer-logo.png" alt="Лого" class="footer__copyright-img">
+			<picture>
+				<source srcset="img/footer-logo.webp" type="image/webp">
 
-			<p class= "footer__copyright-text">&#169; Центр йоги 2020 – 2021</p>
+				<img src="img/footer-logo.png" alt="" aria-hidden="true">
+			</picture>
+
+			<p class="footer__copyright-text">&#169; Центр йоги 2020 – 2021</p>
 		</div>
 	</div>
 </footer>

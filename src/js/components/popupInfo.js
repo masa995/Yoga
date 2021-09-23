@@ -13,7 +13,11 @@ const dataProgram = [{ //data popup
 				работу организма, излечиваться. Во время занятий чередуются напряжение и 
 				расслабление, что позволяет достичь лучшего результата, укрепить здоровье.
 			</div>`,
-	img: `<img class="popup__img" src="../img/program-1.jpg" alt="Фото занятие">`
+	img: `<picture>
+					<source srcset="img/program-1.webp" type="image/webp">
+
+					<img src="img/program-1.jpg" alt="Фото занятия" class="program-slider__img">
+				</picture>`
 },
 
 {
@@ -23,7 +27,11 @@ const dataProgram = [{ //data popup
 				Если классическая йога уделяет первоочередное внимание дыхательным упражнениям, 
 				развитию гибкости и расслаблению, то аштанга-йога формирует силу духа и тела.
 			</div>`,
-	img: `<img class="popup__img" src="../img/program-2.jpg" alt="Фото занятие">`
+	img: `<picture>
+					<source srcset="img/program-2.webp" type="image/webp">
+
+					<img src="img/program-2.jpg" alt="Фото занятия" class="program-slider__img">
+				</picture>`
 },
 
 {
@@ -33,7 +41,11 @@ const dataProgram = [{ //data popup
 				Она, также, успокаивает, учит контролировать дыхание и, прежде всего, 
 				подготавливает тело женщины к родам.
 			</div>`,
-	img: `<img class="popup__img" src="../img/program-3.jpg" alt="Фото занятие">`
+	img: `<picture>
+					<source srcset="img/program-3.webp" type="image/webp">
+
+					<img src="img/program-3.jpg" alt="Фото занятия" class="program-slider__img">
+				</picture>`
 },
 
 {
@@ -46,7 +58,11 @@ const dataProgram = [{ //data popup
 				Балансирование в гамаке значительно улучшает координацию движений,
 				развивает вестибулярный аппарат и приносит состояние легкости и контроля над телом.
 			</div>`,
-	img: `<img class="popup__img" src="../img/program-4.jpg" alt="Фото занятие">`
+	img: `<picture>
+					<source srcset="img/program-1.webp" type="image/webp">
+
+					<img src="img/program-1.jpg" alt="Фото занятия" class="program-slider__img">
+				</picture>`
 }];
 
 linksProgram.forEach((el) => {

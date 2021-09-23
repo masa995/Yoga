@@ -77,7 +77,6 @@
     .hero {
         height: 100%;
         min-height: auto;
-        margin-top: 105px;
     }
 
     .hero__inner {
@@ -266,7 +265,7 @@
         margin: 0 0 40px;
     }
 
-     .hero__text{
+    .hero__text {
         margin-bottom: 30px;
     }
 
@@ -274,7 +273,7 @@
         margin-top: 30px;
     }
 
-     .about__text{
+    .about__text {
         margin-bottom: 30px;
     }
 
@@ -301,11 +300,17 @@
         font-size: 35px;
         margin: 0 0 30px;
     }
-    .about__text{
-        font-size: 18px;
+
+    .hero {
+        margin-top: 67px;
+        padding-bottom: 25px;
     }
 
     .hero__text {
+        font-size: 18px;
+    }
+
+    .about__text {
         font-size: 18px;
     }
     .advantage__img img {
@@ -356,7 +361,7 @@
     }
 
     .popup__img {
-		width: 100%;
+        width: 100%;
     }
 
     .popup__text {
