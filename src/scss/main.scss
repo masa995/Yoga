@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixin";
+@import "fonts";
+@import "settings";
+@import "repeat-elem";
+
+//components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/advantage";
+@import "./components/sale";
+@import "./components/programs";
+@import "./components/videos";
+@import "./components/price";
+@import "./components/trainers";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/popup";
+
+
+@import "./media";
+@import "./active";

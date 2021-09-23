@@ -1,0 +1,58 @@
+.contact {
+	padding: 70px 0;
+	background-image: url("../../img/bg/contact-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__descr {
+		max-width: 800px;
+		margin: 0 auto 70px;
+		text-align: center;
+	}
+}
+
+.form {
+	position: relative;
+	width: 850px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__input {
+		width: 100%;
+		padding: 20px 35px;
+		background-color: $grayFormColor;
+		border: 1px solid $darkGrayFormColor;
+		margin-bottom: 30px;
+
+		&::placeholder {
+			color: $darkGrayFormColor;
+			font-size: 20px;
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		padding: 20px 35px;
+		background-color: $grayFormColor;
+		border: 1px solid $darkGrayFormColor;
+		margin-bottom: 30px;
+		resize: none; /* Запрещаем изменять размер */
+
+		&::placeholder {
+			color: $darkGrayFormColor;
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.footer {
+	background-color: $mainColor;
+	color: $whiteColor;
+	padding: 70px 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__box-address {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		font-style: normal;
+	}
+
+	&__title {
+		font-family: "OpenSans-Bold", sans-serif;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	&__address {
+		line-height: calc(45 / 30 * 100%);
+		margin-bottom: 30px;
+	}
+
+	&__menu-item:not(:last-child) {
+		margin-bottom: 17px;
+	}
+
+	&__menu-link,
+	&__link-site {
+		display: inline-block;
+		transform: scale(1);
+		transition: transform 0.5s ease;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	&__copyright-img {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	&__copyright-text {
+		margin: 0;
+	}
+}

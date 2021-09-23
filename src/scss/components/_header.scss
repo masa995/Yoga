@@ -1,0 +1,53 @@
+.header {
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	line-height: 0;
+	font-size: 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+
+	&__btn {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		font-size: 21px;
+		line-height: 25 / 21 * 100%;
+
+		& + .menu__item {
+			margin-left: 55px;
+		}
+	}
+
+	&__link {
+		padding: 10px 0;
+		transform: translateY(0);
+		display: inline-block; //чтобы у ссылки сработал transform
+		transition: color 0.5s ease, transform 0.5s ease;
+
+		&:hover {
+			color: $pinkColorHover;
+			transform: translateY(-7px);
+		}
+	}
+}

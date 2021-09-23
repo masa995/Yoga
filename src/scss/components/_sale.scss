@@ -1,0 +1,40 @@
+.sale {
+	padding: 70px 0;
+	background: rgb(255, 255, 255);
+	background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 221, 1) 100%);
+
+	&__inner {
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__left-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		img {
+			object-fit: cover;
+			overflow: hidden;
+			width: 710px;
+			height: auto;
+		}
+	}
+
+	&__right-container {
+		position: relative;
+		z-index: 1;
+		margin: 60px 0;
+		margin-left: auto;
+		max-width: 615px;
+	}
+
+	&__title {
+		background-image: url("../../img/bg/sale-desing.png");
+		background-position: left top;
+		background-size: 315px 130px;
+		background-repeat: no-repeat;
+		margin-bottom: 95px;
+		font-size: 60px;
+		line-height: calc(70 / 60 * 100%);
+	}
+}

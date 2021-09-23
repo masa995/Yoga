@@ -1,0 +1,365 @@
+@media (max-width: 1284px) {
+    .menu__item + .menu__item {
+        margin-left: 35px;
+    }
+    .price__item {
+        width: 320px;
+    }
+}
+@media (max-width: 1130px) {
+    .title {
+        font-size: 55px;
+        margin: 0 0 50px;
+    }
+    .menu__btn {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        z-index: 55;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    .menu__btn-elem {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #484f5b;
+        transition: transform 0.7s, opacity 0.7s, -webkit-transform 0.7s;
+    }
+    .menu__btn-elem:first-child {
+        top: 0;
+    }
+    .menu__btn-elem:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .menu__btn-elem:last-child {
+        bottom: 0;
+    }
+
+    .menu__list {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        right: 0;
+        z-index: 40;
+        flex-direction: column;
+        padding: 0 30px 20px;
+        margin-top: 100px;
+        overflow: auto;
+        background-color: #fff;
+        opacity: 0;
+        transform: translate(-50%, -200%);
+        transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    }
+
+    .menu__item {
+        position: relative;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .menu__item + .menu__item {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: 100%;
+        min-height: auto;
+        margin-top: 105px;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__left-container {
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .hero__left-container img {
+        max-width: 100%;
+        width: auto;
+        height: 100%;
+        min-height: auto;
+    }
+
+    .hero__right-container {
+        margin-bottom: 50px;
+        margin-top: 105px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .advantage {
+        padding-top: 80px;
+    }
+
+    .advantage__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -20px 0;
+    }
+
+    .advantage__item {
+        margin: 20px 0;
+    }
+
+    .advantage__blok {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .programs {
+        padding: 50px 0 70px;
+    }
+
+    .sale {
+        padding: 50px 0;
+    }
+
+    .sale__inner {
+        justify-content: center;
+    }
+
+    .sale__left-container {
+        display: none;
+    }
+
+    .sale__right-container {
+        margin: 0 auto;
+    }
+
+    .price,
+    .price__item {
+        padding: 50px 0;
+    }
+
+    .price__list {
+        flex-direction: column;
+        align-items: center;
+        margin: -20px 0;
+    }
+
+    .price__item {
+        margin: 20px 0;
+        width: 400px;
+        padding: 0;
+    }
+
+    .trainers {
+        padding: 50px 0;
+    }
+
+    .trainers__item {
+        flex: 0 0 45%;
+    }
+
+    .footer__address {
+        max-width: 250px;
+    }
+
+    .popup__content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .popup__text {
+        order: 1;
+        max-width: 100%;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 930px) {
+    .about {
+        padding: 40px 0;
+        position: relative;
+    }
+    .about__inner {
+        justify-content: center;
+    }
+    .about__left-container {
+        padding-left: 0;
+        margin-right: 0;
+        position: relative;
+        z-index: 5;
+        max-width: 100%;
+        width: 100%;
+    }
+    .about__right-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.3;
+        width: 200px;
+    }
+    .about__right-container img {
+        width: 100%;
+    }
+    .advantage {
+        padding-top: 50px;
+    }
+    .advantage__title {
+        margin-bottom: 15px;
+    }
+    .price-block__price {
+        font-size: 35px;
+    }
+    .videos__inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .videos__left-container {
+        order: 1;
+        margin-right: 0;
+        width: 100%;
+    }
+    .videos__right-container {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .trainers__item {
+        flex: 0 0 100%;
+    }
+    .contact__descr {
+        margin-bottom: 50px;
+    }
+    .form {
+        width: 100%;
+    }
+    .footer__inner {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer__box-address,
+    .footer__menu {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 630px) {
+    .btn {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 45px;
+        line-height: calc(50 / 45 * 100%);
+        margin: 0 0 40px;
+    }
+
+     .hero__text{
+        margin-bottom: 30px;
+    }
+
+    .hero__right-container {
+        margin-top: 30px;
+    }
+
+     .about__text{
+        margin-bottom: 30px;
+    }
+
+    .sale__title {
+        background-size: 300px 120px;
+        margin-bottom: 30px;
+    }
+    .price__item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu__btn,
+    .popup__close {
+        width: 40px;
+        height: 20px;
+    }
+    .menu__btn-elem,
+    .popup__close-elem {
+        height: 3px;
+    }
+    .title {
+        font-size: 35px;
+        margin: 0 0 30px;
+    }
+    .about__text{
+        font-size: 18px;
+    }
+
+    .hero__text {
+        font-size: 18px;
+    }
+    .advantage__img img {
+        width: 80%;
+    }
+    .advantage__img-1::after {
+        left: -33px;
+    }
+    .advantage__img-2::after {
+        left: -7px;
+    }
+    .advantage__img-3::after {
+        left: 0;
+        top: -25px;
+    }
+    .advantage__text {
+        font-size: 18px;
+    }
+    .price-block__title {
+        font-size: 25px;
+    }
+    .price-block__price {
+        font-size: 30px;
+    }
+    .videos-slider__btn {
+        width: 45px;
+        height: 45px;
+    }
+    .videos__descr {
+        font-size: 18px;
+    }
+    .trainers__title-name {
+        font-size: 25px;
+    }
+    .trainers__text {
+        font-size: 18px;
+    }
+    .contact__descr {
+        margin-bottom: 30px;
+    }
+
+    .form__input {
+        padding: 10px 25px;
+    }
+
+    .popup__text {
+        font-size: 18px;
+    }
+
+    .popup__img {
+		width: 100%;
+    }
+
+    .popup__text {
+        font-size: 18px;
+    }
+}

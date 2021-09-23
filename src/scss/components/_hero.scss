@@ -1,0 +1,95 @@
+.hero {
+    display: flex;
+    position: relative;
+
+    height: calc(100vh - 105px);
+    min-height: 500px;
+    margin-top: 105px;
+
+    background-image: url("../../img/bg/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left-container {
+        display: flex;
+        margin-right: 10px;
+        flex: 0 0 auto;
+
+        img {
+            object-fit: cover;
+            height: auto;
+            max-height: calc(100vh - 105px);
+            min-height: 500px;
+            overflow: hidden;
+        }
+    }
+
+    &__right-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 70px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__text {
+        max-width: 545px;
+        margin: 0;
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 24px;
+        line-height: calc(36 / 24 * 100%);
+    }
+
+    &__link-down {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        z-index: 5;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: fill 0.5s ease;
+        animation: arrowDown 2s infinite;
+
+        &:hover svg {
+            fill: $mainColorHover;
+        }
+        svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            fill: $mainColor;
+        }
+    }
+}
+
+//arrow animation
+@keyframes arrowDown {
+    0% {
+        bottom: 40px;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}

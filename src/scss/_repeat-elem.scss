@@ -1,0 +1,21 @@
+.title {
+	font-size: 60px;
+	line-height: calc(75 / 60 * 100%);
+	margin: 0 0 70px;
+	font-family: "OpenSans-Bold", sans-serif;
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	color: $mainColor;
+	background-color: $pinkColor;
+	font-size: 21px;
+	font-family: "OpenSans-Bold", sans-serif;
+	padding: 15px 70px;
+	transition: background-color 0.5s ease;
+
+	&:hover {
+		background-color: $pinkColorHover;
+	}
+}
