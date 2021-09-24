@@ -1,6 +1,6 @@
 .price {
 	padding: 70px 0;
-	background-image: url("../../img/bg/price-bg.png");
+	background-image: url("../img/bg/price-bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,14 +64,14 @@
 }
 
 .price-block--1::after {
-	content: url("../../img/bg/price-desing-1.png");
+	content: url("../img/bg/price-desing-1.png");
 	position: absolute;
 	top: 10px;
 	left: -15px;
 }
 
 .price-block--3::after {
-	content: url("../../img/bg/price-desing-2.png");
+	content: url("../img/bg/price-desing-2.png");
 	position: absolute;
 	bottom: -25px;
 	right: -75px;

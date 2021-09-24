@@ -1,61 +1,61 @@
 const { src, dest, parallel, series, watch } = require('gulp');
-const del 									 = require('del');
-const browserSync 							 = require('browser-sync').create();
-const fileinclude 							 = require('gulp-file-include');
-const concat 								 = require('gulp-concat');
-const sourcemaps                             = require('gulp-sourcemaps');
-const scss									 = require('gulp-sass');
-const autoprefixer 							 = require('gulp-autoprefixer');
-const cleanCSS 								 = require('gulp-clean-css');
-const babel 								 = require('gulp-babel');
-const uglify 								 = require('gulp-uglify-es').default;
-const ttf2woff                               = require('gulp-ttf2woff');
-const ttf2woff2                              = require('gulp-ttf2woff2');
-const webp 									 = require('gulp-webp');
-const imagemin                               = require('gulp-imagemin');
-const svgSprite 							 = require('gulp-svg-sprite');
+const del = require('del');
+const browserSync = require('browser-sync').create();
+const fileinclude = require('gulp-file-include');
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
+const scss = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify-es').default;
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
+const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
+const svgSprite = require('gulp-svg-sprite');
 //ip => деспечер задач => wi-fi
 // host:      "192.168.31.29",// можно использовать ip сервера,
 
-function browsersync(){
+function browsersync() {
 	browserSync.init({
 		server: {
-		   baseDir: "app/"
+			baseDir: "app/"
 		}
-   });
+	});
 }
 
-function cleanApp(){
+function cleanApp() {
 	return del('./app/');
 }
 
-function html (){
-	return src('./src/index.html') 
-		.pipe(fileinclude()) 
-		.pipe(dest('./app')) 
+function html() {
+	return src('./src/index.html')
+		.pipe(fileinclude())
+		.pipe(dest('./app'))
 		.pipe(browserSync.stream());
 }
 
-function htmlBuild (){
-	return src('./src/index.html') 
-		.pipe(fileinclude()) 
-		.pipe(dest('./app')) 
+function htmlBuild() {
+	return src('./src/index.html')
+		.pipe(fileinclude())
+		.pipe(dest('./app'))
 }
 
-function styles(){
+function styles() {
 	return src('./src/scss/**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(scss({
-				outputStyle: 'expendend'
-			}))
-		.pipe(autoprefixer({ 
-					overrideBrowserslist: ["last 5 versions"],
-	            	cascade: true,
-	            	grid: true 
-				}))
+			outputStyle: 'expendend'
+		}))
+		.pipe(autoprefixer({
+			overrideBrowserslist: ["last 5 versions"],
+			cascade: true,
+			grid: true
+		}))
 		.pipe(cleanCSS({
-					level: 2 
-				}))
+			level: 2
+		}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('./app/css/'))
 		.pipe(browserSync.stream());
@@ -77,27 +77,27 @@ function stylesBuild() {
 		.pipe(dest('./app/css/'))
 }
 
-function styleLibs(){
+function styleLibs() {
 	return src('node_modules/swiper/swiper-bundle.min.css')
 		.pipe(concat('libs.css'))
-    	.pipe(dest('./app/css/'))
+		.pipe(dest('./app/css/'))
 }
 
-function scripts () {
+function scripts() {
 	src('./src/js/plugins/**.js')
 		.pipe(concat('plugins.js'))
 		.pipe(dest('./app/js/'))
-  	return src(
-    	['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
-	   	.pipe(sourcemaps.init()) 
-		.pipe(babel({ 
-				presets: ['@babel/env']
-			}))
-	    .pipe(concat('main.js'))
-	   	.pipe(uglify()) 
-	    .pipe(sourcemaps.write('.'))
-	    .pipe(dest('./app/js'))
-	    .pipe(browserSync.stream());
+	return src(
+		['./src/js/functions/**.js', './src/js/components/**.js', './src/js/main.js'])
+		.pipe(sourcemaps.init())
+		.pipe(babel({
+			presets: ['@babel/env']
+		}))
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(sourcemaps.write('.'))
+		.pipe(dest('./app/js'))
+		.pipe(browserSync.stream());
 }
 
 function scriptsBuild() {
@@ -114,29 +114,29 @@ function scriptsBuild() {
 		.pipe(dest('./app/js'))
 }
 
-function scriptLibs(){
+function scriptLibs() {
 	return src('node_modules/swiper/swiper-bundle.min.js')
 		.pipe(concat('libs.js'))
-    	.pipe(dest('./app/js/'))//куда все складавать
+		.pipe(dest('./app/js/'))
 }
 
-function imagesWebp (){
-	return src(['./src/img/**/*.{jpg,png,jpeg}', 
-				'!./src/img/bg/**/*.*'
-				]) 
+function imagesWebp() {
+	return src(['./src/img/**/*.{jpg,png,jpeg}',
+		'!./src/img/bg/**/*.*'
+	])
 		.pipe(
 			webp({
 				quality: 70
 			})
 		)
 		.pipe(dest('app/img'))
-		.pipe(browserSync.stream()); 
+		.pipe(browserSync.stream());
 }
 
-function imagesWebpBuild (){
-	return src(['./src/img/**/*.{jpg,png,jpeg}', 
-				'!./src/img/bg/**/*.*'
-				]) 
+function imagesWebpBuild() {
+	return src(['./src/img/**/*.{jpg,png,jpeg}',
+		'!./src/img/bg/**/*.*'
+	])
 		.pipe(
 			webp({
 				quality: 70
@@ -170,49 +170,49 @@ function imagesBuild() {
 }
 
 //sprite svg
-function svgSprit(){
+function svgSprit() {
 	return src('./src/img/svg/**.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: "../sprite.svg" //sprite file name
-        }
-      },
-    }))
-    .pipe(dest('./app/img'))
-    .pipe(browserSync.stream()); 
+		.pipe(svgSprite({
+			mode: {
+				stack: {
+					sprite: "../sprite.svg" //sprite file name
+				}
+			},
+		}))
+		.pipe(dest('./app/img'))
+		.pipe(browserSync.stream());
 }
 
-function svgSpritBuild(){
+function svgSpritBuild() {
 	return src('./src/img/svg/**.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: "../sprite.svg" //sprite file name
-        }
-      },
-    }))
-    .pipe(dest('./app/img'))
+		.pipe(svgSprite({
+			mode: {
+				stack: {
+					sprite: "../sprite.svg" //sprite file name
+				}
+			},
+		}))
+		.pipe(dest('./app/img'))
 }
 
-function resources(){ 
+function resources() {
 	return src('./src/resources/**/*.*')
 		.pipe(dest('./app/resources'));
 }
 
-function fonts(){
+function fonts() {
 	src('./src/fonts/**.ttf')
-			.pipe(ttf2woff()) 
-			.pipe(dest('./app/fonts/'))
-		return src ('./src/fonts/**.ttf')
-			.pipe(ttf2woff2()) 
-			.pipe(dest('./app/fonts/'));
+		.pipe(ttf2woff())
+		.pipe(dest('./app/fonts/'))
+	return src('./src/fonts/**.ttf')
+		.pipe(ttf2woff2())
+		.pipe(dest('./app/fonts/'));
 }
 
-function watchFiles(){
+function watchFiles() {
 	watch('./src/index.html', html);
 	watch('./src/partHTML/**/*.html', html);
-	watch('./src/scss/**/*.scss', styles); 
+	watch('./src/scss/**/*.scss', styles);
 	watch('./src/js/**/*.js', scripts);
 	watch('./src/img/**/*.{jpg,png,jpeg}', imagesWebp);
 	watch('./src/img/*.*', images);
@@ -228,4 +228,4 @@ exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.browsersync = browsersync;
 exports.default = series(cleanApp, imagesWebp, images, parallel(html, styles, styleLibs, scripts, scriptLibs, svgSprit, fonts, resources, watchFiles, browsersync));
-exports.build = series(cleanApp, imagesWebpBuild, imagesBuild, parallel(htmlBuild, stylesBuild, styleLibs, scriptsBuild, scriptLibs, svgSpritBuild, fonts, resources, watchFiles));
+exports.build = series(cleanApp, imagesWebpBuild, imagesBuild, parallel(htmlBuild, stylesBuild, styleLibs, scriptsBuild, scriptLibs, svgSpritBuild, fonts, resources));

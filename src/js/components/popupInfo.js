@@ -59,9 +59,9 @@ const dataProgram = [{ //data popup
 				развивает вестибулярный аппарат и приносит состояние легкости и контроля над телом.
 			</div>`,
 	img: `<picture>
-					<source srcset="img/program-1.webp" type="image/webp">
+					<source srcset="img/program-4.webp" type="image/webp">
 
-					<img src="img/program-1.jpg" alt="Фото занятия" class="program-slider__img">
+					<img src="img/program-4.jpg" alt="Фото занятия" class="program-slider__img">
 				</picture>`
 }];
 
