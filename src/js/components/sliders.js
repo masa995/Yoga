@@ -8,7 +8,6 @@ const swiperProgram = new Swiper(sliderProgram, {
   centeredSlides: true,
   spaceBetween: 65,
   slidesPerView: 1.1,
-  loop: true,
 
   breakpoints: {
     650: {
