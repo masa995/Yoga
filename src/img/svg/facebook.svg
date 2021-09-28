@@ -1,38 +1,10 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
-<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M301.004,125.217H265.44
-	c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771
-	v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="38px" height="38px">
+<path fill-rule="evenodd"  fill="rgb(72, 79, 91)"
+ d="M-0.000,-0.000 L37.062,-0.000 L37.062,38.000 L-0.000,38.000 L-0.000,-0.000 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M21.789,11.827 L23.653,11.827 L23.653,8.411 C23.332,8.365 22.226,8.261 20.938,8.261 C18.250,8.261 16.409,10.039 16.409,13.307 L16.409,16.315 L13.443,16.315 L13.443,20.132 L16.409,20.132 L16.409,29.738 L20.045,29.739 L20.045,20.133 L22.892,20.133 L23.344,16.315 L20.045,16.315 L20.045,13.685 C20.045,12.582 20.327,11.827 21.789,11.827 Z"/>
 </svg>

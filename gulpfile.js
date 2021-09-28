@@ -14,8 +14,6 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
-//ip => деспечер задач => wi-fi
-// host:      "192.168.31.29",// можно использовать ip сервера,
 
 function browsersync() {
 	browserSync.init({
@@ -67,7 +65,7 @@ function stylesBuild() {
 			outputStyle: 'expendend'
 		}))
 		.pipe(autoprefixer({
-			overrideBrowserslist: ["last 5 versions"], // последние 5 версий
+			overrideBrowserslist: ["last 5 versions"],
 			cascade: true,
 			grid: true
 		}))
