@@ -1,21 +1,23 @@
-.menu__btn.active .menu__btn-elem:first-child {
-        top: 50%;
-        transform: rotate(-30deg) translateY(-50%);
-}
+@media (max-width: 1130px) {
+        .menu__btn.active .menu__btn-elem:first-child {
+                top: 50%;
+                transform: rotate(-30deg) translateY(-50%);
+        }
 
-.menu__btn.active .menu__btn-elem:nth-child(2) {
-        transform: translateY(-50px);
-        opacity: 0;
-}
+        .menu__btn.active .menu__btn-elem:nth-child(2) {
+                transform: translateY(-50px);
+                opacity: 0;
+        }
 
-.menu__btn.active .menu__btn-elem:last-child {
-        bottom: 50%;
-        transform: rotate(30deg) translateY(50%);
-}
+        .menu__btn.active .menu__btn-elem:last-child {
+                bottom: 50%;
+                transform: rotate(30deg) translateY(50%);
+        }
 
-.menu__list.active {
-        transform: translate(-50%, 0);
-        opacity: 1;
+        .menu__list.active {
+                transform: translate(-50%, 0);
+                opacity: 1;
+        }
 }
 
 .popup.active {
