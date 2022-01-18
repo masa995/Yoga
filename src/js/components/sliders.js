@@ -1,25 +1,25 @@
 const sliderProgram = document.querySelector('.programs__swiper-container');
-const sliderVideo = document.querySelector('.videos__swiper-container');
+const sliderVideo = document.querySelector('.video__swiper-container');
 const playButtonVideo = document.querySelectorAll('.js-btn-play');
-const slideVideo = document.querySelectorAll('.videos');
+const slideVideo = document.querySelectorAll('.video');
 
 const swiperProgram = new Swiper(sliderProgram, {
   // Optional parameters
   centeredSlides: true,
-  spaceBetween: 65,
-  slidesPerView: 1.1,
+  slidesPerView: 1,
+  spaceBetween: 25,
 
   breakpoints: {
     650: {
       centeredSlides: false,
-      slidesPerView: 2.1,
-      spaceBetween: 65
+      slidesPerView: 2,
+      spaceBetween: 60
     },
 
     1130: {
       centeredSlides: false,
-      slidesPerView: 3.1,
-      spaceBetween: 85
+      slidesPerView: 3,
+      spaceBetween: 70
 
     }
   },
@@ -31,20 +31,13 @@ const swiperProgram = new Swiper(sliderProgram, {
 });
 
 const swiperVideo = new Swiper(sliderVideo, {
-  centeredSlides: true,
   slidesPerView: 1,
-  spaceBetween: 15,
+  centeredSlides: true,
+  spaceBetween: 50,
   loop: true,
 
-  breakpoints: {
-    630: {
-      spaceBetween: 50,
-      slidesPerView: 1.1,
-    },
-  },
-
   pagination: {
-    el: '.videos-slider__pagination',
+    el: '.video-slider__pagination',
     clickable: true,
   },
 });
@@ -58,8 +51,8 @@ playButtonVideo.forEach((el) => {
 });
 
 swiperVideo.on('transitionEnd', function () {
-  let videos = document.querySelectorAll('.js-slide-video video');
-  videos.forEach((el) => {
+  let video = document.querySelectorAll('.js-slide-video video');
+  video.forEach((el) => {
     el.pause();
     el.currentTime = 0
   });
@@ -71,8 +64,8 @@ swiperVideo.on('transitionEnd', function () {
 
 body.addEventListener('click', (e) => {
   if (!e.target.closest('.js-slide-video')) {
-    let videos = document.querySelectorAll('.js-slide-video video');
-    videos.forEach((el) => {
+    let video = document.querySelectorAll('.js-slide-video video');
+    video.forEach((el) => {
       el.pause();
     });
 

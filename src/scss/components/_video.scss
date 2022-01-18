@@ -1,4 +1,4 @@
-.videos {
+.video {
 	background-color: $pinkColor;
 	padding: 70px 0;
 
@@ -15,7 +15,6 @@
 	}
 
 	&__swiper-container {
-		width: 100%;
 		height: auto;
 	}
 
@@ -37,9 +36,13 @@
 	}
 }
 
-.videos-slider {
+.video-slider {
+	padding: 25px;
+	margin-right: -25px;
+	margin-left: -25px;
+
 	&__slide {
-		box-shadow: 10px 10px 20px 0px rgba(12, 13, 12, 0.1);
+		box-shadow: 10px 10px 20px 0px rgba(12, 13, 12, 0.2);
 		position: relative;
 		height: auto;
 		overflow: hidden;

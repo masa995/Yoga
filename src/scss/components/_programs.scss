@@ -16,6 +16,10 @@
 }
 
 .program-slider {
+	padding: 25px;
+	margin-right: -25px;
+	margin-left: -25px;
+
 	&__slide {
 		background-color: $whiteColor;
 		position: relative;
