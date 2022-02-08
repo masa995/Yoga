@@ -33,7 +33,7 @@
 
 	&__item {
 		font-size: 21px;
-		line-height: 25 / 21 * 100%;
+		line-height: calc(25 / 21 * 100%);
 
 		& + .menu__item {
 			margin-left: 55px;
